@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+@keyframes slide {
+  from {
+    transform:translateX(-500px);
+  }
+  to { 
+    transform:translateX(0); 
+  }
+}
+
+a {
+  color:#6121ff;
+  text-decoration:none;
+}
+
+* {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition:0.8s;
+  -moz-transition:0.8s;
+  animation:slide 0.8s ease forwards;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family:'Comfortaa', cursive;
+}
+
+button {
+  border:none;
+  border-radius:5px;
+  padding:5px;
+  background:-webkit-linear-gradient(0deg, transparent 50%, #27e8 50%);
+  background-size:400px 80px;
+  cursor:pointer;
+  max-width:200px;
+}
+
+button:hover {
+  background-position:200px 0px;
+  color:white;
+}
+
+pre {
+  background-color:black;
+  color:gainsboro;
+  border-radius:5px;
+}
+
+pre * {
+  margin:5px;
+}
+
+.examples {
+  width:100%;
+  display:table;
+}
+
+.example {
+  display:table-cell;
+  padding:10px;
+  text-align:center;
+  border-radius:4px;
+  box-shadow:rgba(0, 0, 0, 0.75) 0px 0px 10px -5px;
+  height:50%;
+  width:calc(50% - 25px);
+  margin-bottom:5px;
+}
+
+#right {
+  height:50%;
+  width:calc(50% - 25px);
+  min-height:200px;
+  margin-right:1px;
+  float:right;
+}
+
+#left {
+  height:50%;
+  width:calc(50% - 25px);
+  min-height:200px;
+  margin-left:1px;
+  float:left;
+}

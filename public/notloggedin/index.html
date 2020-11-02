@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CodeHub</title>
+    <link href="/notloggedin/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>CodeHub</h1>
+    <p>Creations, no matter how bad or good they are, are stored here forever.</p>
+    <center>
+      <button>Start a CodeHub Account</button>
+      <br> 
+      <br>
+      <h2>Features</h2>
+      <hr style="border-top:1px gray solid; opacity:0.2;">
+    </center>
+    <div class="examples">
+      <div class="example" id="right">
+        <h3>Secured</h3>
+        <p>Using <a href="https://helmetjs.github.io">helmet.js</a> as middleware, we secure your data as much as possible by removing headers with sensitive info and providing <a href="https://en.wikipedia.org/wiki/Cross-site_scripting">XSS</a> protection.</p>
+        <button>Be secured</button>
+      </div>
+      <div class="example" id="left">
+        <h3>Public Scripts</h3>
+        <p class="markdown">We make free scripts for you and for the whole community! Including markdown! Speaking of markdown, our Codelet `*.md` files also support markdown.</p>
+        <button onclick="window.location='/public-scripts/md.js'">Use markdown on your website</button> 
+      </div>
+    </div>
+
+    <script src="/public-scripts/md.js"></script>
+    <script src="/notloggedin/script.js"></script>
+  </body>
+</html>
