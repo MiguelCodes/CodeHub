@@ -10,22 +10,30 @@
     <h1>CodeHub</h1>
     <p>Creations, no matter how bad or good they are, are stored here forever.</p>
     <center>
-      <button>Start a CodeHub Account</button>
+      <button onclick="window.location='/signup'">Start a CodeHub Account</button>
+      <p>or</p>
+      <button onclick="window.location='/signup'">Login</button>
       <br> 
       <br>
       <h2>Features</h2>
-      <hr style="border-top:1px gray solid; opacity:0.2;">
+      <hr>
     </center>
     <div class="examples">
       <div class="example" id="right">
         <h3>Secured</h3>
         <p>Using <a href="https://helmetjs.github.io">helmet.js</a> as middleware, we secure your data as much as possible by removing headers with sensitive info and providing <a href="https://en.wikipedia.org/wiki/Cross-site_scripting">XSS</a> protection.</p>
-        <button>Be secured</button>
       </div>
       <div class="example" id="left">
         <h3>Public Scripts</h3>
         <p class="markdown">We make free scripts for you and for the whole community! Including markdown! Speaking of markdown, our Codelet `*.md` files also support markdown.</p>
-        <button onclick="window.location='/public-scripts/md.js'">Use markdown on your website</button> 
+      </div>
+      <div class="example" id="right">
+        <h3>Mobile Friendly</h3>
+        <p>CodeHub was tested hundreds of times on mobile devices (tablets, phones, etc.) and the latest test is works for the tested <a href="https://www.apple.com/shop/buy-iphone/iphone-xr">iPhone XR</a>, and the <a href="https://www.samsung.com/us/mobile/phones/galaxy-s/galaxy-s9-64gb--unlocked--sm-g960uzpaxaa/">Samsung Galaxy S9</a>. It might work on your device!</p>
+      </div>
+      <div class="example" id="left">
+        <h3>We Listen</h3>
+        <p>As a victim user of a website and reporting with no response, we really know what it feels like. Getting the feeling of hackers upon you. But our team listens to all your reports and sends back a response.</p>  
       </div>
     </div>
 

@@ -16,8 +16,8 @@ a {
 
 * {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  transition:0.8s;
-  -moz-transition:0.8s;
+  transition:0.3s;
+  -moz-transition:0.3s;
   animation:slide 0.8s ease forwards;
 }
 
@@ -26,6 +26,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 button {
+  transition:0.8s;
+  -moz-transition:0.8s;
   border:none;
   border-radius:5px;
   padding:5px;
@@ -33,6 +35,7 @@ button {
   background-size:400px 80px;
   cursor:pointer;
   max-width:200px;
+  margin:0px;
 }
 
 button:hover {
@@ -52,11 +55,9 @@ pre * {
 
 .examples {
   width:100%;
-  display:table;
 }
 
 .example {
-  display:table-cell;
   padding:10px;
   text-align:center;
   border-radius:4px;
@@ -80,4 +81,15 @@ pre * {
   min-height:200px;
   margin-left:1px;
   float:left;
+}
+
+hr {
+  border-top:1px gray solid; 
+  opacity:0.2;
+}
+
+card img {
+  position:absolute;
+  float:right;
+  border-radius:50%;
 }

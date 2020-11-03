@@ -1,17 +1,19 @@
 {
   "name": "CodeHub",
   "version": "1.0.0",
-  "description": "",
+  "description": "Coding made easier.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon . --delay 10 --config nodemon.json"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "CodeHub Team",
+  "license": "MIT",
   "dependencies": {
     "ejs": "^3.1.5",
     "express": "^4.17.1",
-    "helmet": "^4.1.1"
+    "helmet": "^4.1.1",
+    "nodemon": "^2.0.6"
   }
 }

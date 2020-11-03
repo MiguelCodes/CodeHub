@@ -2,9 +2,16 @@
 const app = require('express')();
 const ejs = require('ejs');
 const helmet = require('helmet');
+const fs = require('fs');
 
 /* Express */
 // pre-middleware
+app.use((req, res, next) => {
+  if (req.headers['x-forwarded-proto'] === 'http') {
+    res.redirect(301, `https://${req.headers.host}/${req.url}`);
+  }
+  next();
+});
 app.use(helmet());
 app.use((req, res, next) => {
   res.setHeader('X-XSS-Protection', '1');
@@ -16,13 +23,18 @@ app.get('/', (req, res) => {
   res.render('notloggedin');
 });
 
-// after-middleware
-app.use((req, res, next) => {
-  if (req.headers['x-forwarded-proto'] === 'http') {
-    res.redirect(301, `https://${req.headers.host}/${req.url}`);
-  }
-  next();
+app.get('/signup', (req, res) => {
+  res.render('signup');
 });
+
+app.get('/scripts/:script', (req, res) => {
+  if (fs.existsSync('public/public-scripts/'+req.params.script)) {
+    res.setHeader('content-type', 'text/plain');
+    res.send(fs.readFileSync('public/public-scripts/'+req.params.script));
+  }
+});
+
+// after-middleware
 
 // static
 app.set('trust proxy');
