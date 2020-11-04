@@ -27,6 +27,11 @@ app.get('/signup', (req, res) => {
   res.render('signup');
 });
 
+app.all('/logout', (req, res) => {
+  res.set('Clear-Site-Data', `"cache", "cookies", "storage", "executionContexts"`);
+  res.redirect('/');
+});
+
 app.get('/scripts/:script', (req, res) => {
   if (fs.existsSync('public/public-scripts/'+req.params.script)) {
     res.setHeader('content-type', 'text/plain');

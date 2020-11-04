@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family:'Comfortaa', cursive;
 }
 
-button {
+.button {
   transition:0.8s;
   -moz-transition:0.8s;
   border:none;
@@ -36,9 +36,11 @@ button {
   cursor:pointer;
   max-width:200px;
   margin:0px;
+  font-size:16px;
+  color:#27e8;
 }
 
-button:hover {
+.button:hover {
   background-position:200px 0px;
   color:white;
 }

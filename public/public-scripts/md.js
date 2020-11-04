@@ -17,15 +17,15 @@ function filter(content) {
   if (result.startsWith("# ")) {
     result = "<h1>"+result.substring(2)+"</h1>";
   } else if (result.startsWith("## ")) {
-    result = "<h2>"+result.substring(2)+"</h2>";
+    result = "<h2>"+result.substring(3)+"</h2>";
   } else if (result.startsWith("### ")) {
-    result = "<h3>"+result.substring(2)+"</h3>";
+    result = "<h3>"+result.substring(4)+"</h3>";
   } else if (result.startsWith("#### ")) {
-    result = "<h4>"+result.substring(2)+"</h4>";
+    result = "<h4>"+result.substring(5)+"</h4>";
   } else if (result.startsWith("##### ")) {
-    result = "<h5>"+result.substring(2)+"</h5>";
+    result = "<h5>"+result.substring(6)+"</h5>";
   } else if (result.startsWith("###### ")) {
-    result = "<h6>"+result.substring(2)+"</h6>";
+    result = "<h6 style='color:gray; opacity:0.4;'>"+result.substring(7)+"</h6>";
   } 
 
   if (result.startsWith("- ")) {
