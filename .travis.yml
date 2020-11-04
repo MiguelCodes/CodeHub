@@ -1,0 +1,6 @@
+language: nodejs
+rvm:
+  - 12
+  - ejs
+  - express
+  - helmet
