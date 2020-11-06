@@ -1,6 +1,8 @@
-language: nodejs
+language: node_js
 rvm:
   - 12
   - ejs
   - express
   - helmet
+os: linux
+dist: xenial
