@@ -1,8 +1,5 @@
 language: node_js
-rvm:
-  - 12
-  - ejs
-  - express
-  - helmet
+node_js:
+  - "12"
 os: linux
 dist: xenial
